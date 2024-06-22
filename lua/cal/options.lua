@@ -7,6 +7,7 @@ vim.g.maplocalleader = " "
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
 
 vim.opt.showmode = false
 
@@ -19,11 +20,11 @@ vim.opt.clipboard = "unnamedplus"
 -- testing if I prefer this or cindent
 -- vim.opt.cindent = true
 vim.opt.smartindent = true
-vim.opt.breakindent = true
 
 -- Search Settings
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
 -- Configure split behavior
@@ -31,6 +32,8 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 vim.opt.scrolloff = 12
+vim.opt.signcolumn = "yes"
+vim.opt.colorcolumn = "80"
 
 vim.opt.updatetime = 42
 
