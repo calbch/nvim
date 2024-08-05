@@ -17,6 +17,14 @@ vim.opt.inccommand = "split"
 -- Sync OS & nvim clipboard
 vim.opt.clipboard = "unnamedplus"
 
+-- Use 4 spaces to insert a <TAB>
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+-- not sure if this is neccessary,
+-- since I chose option 3 from the docs
+vim.opt.softtabstop = 4
+
 -- testing if I prefer this or cindent
 -- vim.opt.cindent = true
 vim.opt.smartindent = true
@@ -33,7 +41,6 @@ vim.opt.splitright = true
 
 vim.opt.scrolloff = 12
 vim.opt.signcolumn = "yes"
-vim.opt.colorcolumn = "80"
 
 vim.opt.updatetime = 42
 
