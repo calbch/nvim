@@ -1,1 +1,2 @@
 - [ ] read `:help ins-completion`
+- [ ] try 1980 sun as a zenbones variant https://github.com/zenbones-theme/zenbones.nvim/blob/main/doc/zenbones.md#create-your-own-colorscheme
