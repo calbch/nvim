@@ -6,14 +6,15 @@ return {
     local harpoon = require("harpoon")
     harpoon:setup()
 
-    for _, idx in ipairs({ 1, 2, 3, 4 }) do
-      vim.keymap.set("n", string.format("<leader>h%d", idx), function()
+    local keys = { "j", "k", "l", ";" }
+    for idx, key in ipairs(keys) do
+      vim.keymap.set("n", string.format("<leader>a%s", key), function()
         harpoon:list():replace_at(idx)
       end)
     end
 
-    for _, idx in ipairs({ 1, 2, 3, 4 }) do
-      vim.keymap.set("n", string.format("<leader>%d", idx), function()
+    for idx, key in ipairs({ "j", "k", "l", ";" }) do
+      vim.keymap.set("n", string.format("<leader>%s", key), function()
         harpoon:list():select(idx)
       end)
     end
