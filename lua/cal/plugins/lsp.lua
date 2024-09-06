@@ -65,8 +65,9 @@ return {
 
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
-      -- TODO: add my default languages
+      -- TODO: Add my default languages
       "stylua",
+      "gopls",
     })
     require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
 
